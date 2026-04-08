@@ -1,0 +1,9 @@
+# Definition of the OOTD Skill
+
+The OOTD (Outfit of the Day) skill enables users to...
+
+## What is OOTD?
+OOTD is a way for individuals to...
+
+## Importance of OOTD
+Understanding OOTD helps...
