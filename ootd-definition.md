@@ -1,0 +1,3 @@
+# OOTD Skill Definition
+
+This document provides a complete definition and overview of the OOTD skill...
