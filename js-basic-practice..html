@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 基础知识练习</title>
+    <style>
+        /* 简单页面样式，方便查看 */
+        body { font-family: Arial; padding: 20px; }
+        h1 { color: #2c3e50; }
+        .tip { color: #7f8c8d; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 基础知识点练习</h1>
+    <p class="tip">按 F12 打开浏览器控制台，查看JS执行结果</p>
+
+    <script>
+        // ===================== 1. 变量定义 =====================
+        // ES5：var 声明变量（无块级作用域）
+        var name = "JavaScript练习";
+        // ES6：let 声明变量（可修改，块级作用域）
+        let age = 18;
+        // ES6：const 声明常量（不可修改，块级作用域）
+        const PI = 3.14159;
+
+        console.log("===== 变量定义 =====");
+        console.log("名称：", name);
+        console.log("年龄：", age);
+        console.log("圆周率：", PI);
+
+        // ===================== 2. 变量/数据类型 =====================
+        // 基本数据类型
+        let str = "字符串";       // String 字符串
+        let num = 100;            // Number 数字
+        let isTrue = true;        // Boolean 布尔值
+        let empty = null;         // Null 空值
+        let undef;                // Undefined 未定义
+        let sym = Symbol("唯一标识"); // Symbol 符号
+        let bigNum = 100n;        // BigInt 大数字
+
+        // 引用数据类型
+        let arr = [1, 2, 3];                // Array 数组
+        let obj = { name: "小明", score: 90 }; // Object 对象
+
+        console.log("\n===== 数据类型 =====");
+        console.log("字符串类型：", typeof str);
+        console.log("数字类型：", typeof num);
+        console.log("数组：", arr);
+        console.log("对象：", obj);
+
+        // ===================== 3. 表达式 =====================
+        // 算术表达式
+        let add = 10 + 5;      // 加法
+        let sub = 10 - 3;      // 减法
+        let mul = 10 * 2;      // 乘法
+        let div = 10 / 2;      // 除法
+        let mod = 10 % 3;      // 取余
+
+        // 比较表达式
+        let compare1 = 10 > 5; // 大于
+        let compare2 = 5 === 5;// 全等
+
+        // 逻辑表达式
+        let logic = true && false; // 与
+        let logic2 = true || false;// 或
+
+        console.log("\n===== 表达式 =====");
+        console.log("算术运算：", add, sub, mul, div, mod);
+        console.log("比较运算：", compare1, compare2);
+        console.log("逻辑运算：", logic, logic2);
+
+        // ===================== 4. 流程控制 =====================
+        console.log("\n===== 流程控制 =====");
+        // 4.1 if-else 条件判断
+        let score = 85;
+        if (score >= 90) {
+            console.log("优秀");
+        } else if (score >= 60) {
+            console.log("及格");
+        } else {
+            console.log("不及格");
+        }
+
+        // 4.2 switch 分支
+        let week = 3;
+        switch (week) {
+            case 1: console.log("周一"); break;
+            case 2: console.log("周二"); break;
+            case 3: console.log("周三"); break;
+            default: console.log("其他");
+        }
+
+        // 4.3 for 循环
+        console.log("for循环：");
+        for (let i = 1; i <= 3; i++) {
+            console.log("循环次数：", i);
+        }
+
+        // 4.4 while 循环
+        console.log("while循环：");
+        let i = 1;
+        while (i <= 2) {
+            console.log("while次数：", i);
+            i++;
+        }
+
+        // ===================== 5. 函数 =====================
+        console.log("\n===== 函数 =====");
+        // 5.1 普通声明式函数
+        function sum(a, b) {
+            return a + b; // 返回值
+        }
+        console.log("普通函数求和：", sum(10, 20));
+
+        // 5.2 箭头函数（ES6）
+        const multiply = (a, b) => a * b;
+        console.log("箭头函数求积：", multiply(10, 20));
+
+        // 5.3 无参函数
+        function sayHello() {
+            console.log("Hello JavaScript!");
+        }
+        sayHello();
+    </script>
+</body>
+</html>
